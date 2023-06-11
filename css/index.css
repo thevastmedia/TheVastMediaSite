@@ -1,0 +1,316 @@
+@import url('https://fonts.cdnfonts.com/css/thunder-2');
+
+* {
+    font-family: 'Thunder Bold', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CLASSES */
+.maintop .title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #66FCF1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.maintop .title:active {
+    animation: click 0.5s ease-in;
+}
+
+@keyframes click {
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.maintop .description {
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    background-color: #1F2833;
+    box-shadow: 0px 0px 5px 5px black;
+    height: 50px;
+    margin-top: 20px;
+
+    background: linear-gradient(to left, #1F2833 50%, #0B0C10 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.box1 ul,
+.box2 ul,
+.box3 ul,
+.box4 ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.box1 ul li,
+.box2 ul li,
+.box3 ul li,
+.box4 ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.box1 ul li h2,
+.box2 ul li h2,
+.box3 ul li h2,
+.box4 ul li h2 {
+    font-size: 30px;
+    color: #66FCF1;
+}
+
+.box1 ul li img,
+.box2 ul li img,
+.box3 ul li img,
+.box4 ul li img {
+    width: 30px;
+}
+
+.box1:active {
+    animation: 0.5s ease-in;
+    background-position: left;
+}
+
+.box2:active {
+    animation: 0.5s ease-in;
+    background-position: left;
+}
+
+.box3:active {
+    animation: 0.5s ease-in;
+    background-position: left;
+}
+
+.box4:active {
+    animation: 0.5s ease-in;
+    background-position: left;
+}
+
+
+
+.channelnames {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.channelnames .channelyt {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 0px solid;
+    border-radius: 20px;
+    background-color: #1F2833;
+    box-shadow: 0px 0px 5px 5px black;
+    height: 170px;
+    width: 320px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.channelnames .channelyt a img {
+    width: 100px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 5px black;
+}
+
+.channelnames .channelyt a img:hover {
+    transition: 0.5s ease-in;
+    filter: brightness(50%);
+}
+
+.channelnames .channelyt ul li {
+    list-style-type: none;
+}
+
+.channelnames .channelyt ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.channelnames .channelyt ul li a:hover {
+    transition: 0.5s ease-out;
+    color: #c4302b;
+}
+
+.channelnames .channelyt ul li p {
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+}
+
+.socialmedia {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialmedia .socialnames ul li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+
+.socialmedia .socialnames .instagram ul li h3 {
+    color: white;
+    font-weight: bolder;
+
+    
+}
+
+.socialmedia .socialnames .instagram ul li h3:hover {
+    transition: 0.5s ease-out;
+    color: #C13584;
+}
+
+.socialmedia .socialnames .instagram ul li a:hover {
+    transition: 0.5s ease-out;
+    color: #C13584;
+}
+
+.socialmedia .socialnames .twitter ul li h3 {
+    color: white;
+    font-weight: bolder;
+}
+
+
+.socialmedia .socialnames .twitter ul li h3:hover {
+    transition: 0.5s ease-out;
+    color: #00acee;
+}
+
+.socialmedia .socialnames .twitter ul li a:hover {
+    transition: 0.5s ease-out;
+    color: #00acee;
+}
+
+.socialmedia .socialnames ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.donate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.donate .donatetext {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.donate button {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #66FCF1;
+    background-color: #1F2833;
+    box-shadow: 0px 0px 5px 5px black;
+    width: 130px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+
+    background: linear-gradient(to left, #1F2833 50%, #0B0C10 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.donate button:hover {
+    background-position: left;
+    color: white;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.feedback .feedbacktext {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #66FCF1;
+    background-color: #1F2833;
+    box-shadow: 0px 0px 5px 5px black;
+    width: 130px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+
+    background: linear-gradient(to left, #1F2833 50%, #0B0C10 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.feedback .feedbacktext:hover {
+    background-position: left;
+    color: white;
+}
+
+.copyright {
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+/* TAGS */
+body {
+    background-color: #0B0C10;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+
+#showhide {
+    margin-top: 20px;
+    display: none;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
